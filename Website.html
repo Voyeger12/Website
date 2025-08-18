@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <title>Metrorealms News</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/dein-eigener-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+        /* --- GRUNDEINSTELLUNGEN & HINTERGRUND --- */
+        body {
+            background-color: black;
+            background-image: url(https://t4.ftcdn.net/jpg/02/22/68/39/360_F_222683930_mXWfHnOk9spCYOyEhqXNSWbWhZd4dFKF.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            /* Wir setzen hier die Hauptschriftart für die ganze Seite */
+            font-family: 'Poppins', sans-serif;
+            color: rgb(220, 220, 220); /* Eine angenehme, leicht graue Schriftfarbe */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- HEADER BEREICH (LOGO & HAUPTTITEL) --- */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0; /* Oben/Unten Abstand, damit es nicht am Rand klebt */
+        }
+
+        .Logo {
+            border: 8px solid white;
+            border-radius: 50%;
+            width: 120px; /* Kleinere, passende Größe */
+            height: 120px;
+        }
+
+        .Haupttitel {
+            font-size: 5vw; /* Responsive Schriftgröße, die sich an die Bildschirmbreite anpasst */
+            font-weight: 700; /* 'bolder' ist oft ungenau, 700 ist der Standard für 'bold' */
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid rgb(255, 71, 87);
+            padding-bottom: 10px;
+            margin: 0; /* Entfernt Standard-Abstände */
+        }
+
+        /* --- ALLGEMEINES KARTEN-DESIGN --- */
+        /* Wir definieren einen allgemeinen Stil, den mehrere Elemente nutzen können */
+        .card {
+            background-color: rgba(25, 25, 25, 0.85); /* Etwas weniger durchsichtig für bessere Lesbarkeit */
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+        }
+        
+        /* --- LAYOUT DER HAUPT-SEKTIONEN --- */
+        /* Hier steuern wir den vertikalen Rhythmus der Seite */
+        .content-section {
+            width: 70%;
+            margin: 60px auto; /* 60px Abstand oben/unten, zentriert */
+            text-align: center;
+        }
+        
+        .Erster_Text {
+            font-size: 1.2em; /* Em ist relativ zur Schriftgröße des body */
+            line-height: 1.6; /* Verbessert die Lesbarkeit von Fließtext */
+        }
+
+        .Erwartung {
+            font-size: 2.5em;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            /* Kein Karten-Stil, nur eine simple Überschrift, um das Layout aufzulockern */
+        }
+
+        /* --- FEATURE-KARTEN BEREICH --- */
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 90%; /* Machen wir den Container etwas breiter */
+            margin: 30px auto 60px auto; /* Angepasster Abstand */
+        }
+
+        .feature-card {
+            flex-basis: 30%; /* Jede Karte nimmt ca. 30% des Containers ein */
+            text-align: center;
+        }
+        
+        .feature-card .icon {
+            font-size: 3em; /* Größe der Icons */
+            color: rgb(255, 71, 87); /* Passend zur roten Linie */
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            color: white; /* Weiß für besseren Kontrast */
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <img class="Logo" src="https://img.freepik.com/vektoren-kostenlos/vogel-bunter-logo-gradientenvektor_343694-1365.jpg" alt="Metrorealms Logo">
+        <h1 class="Haupttitel">Metrorealms</h1> </header>
+
+    <main>
+        <article class="content-section card Erster_Text">
+            Willkommen bei Metrorealms, deiner zentralen Anlaufstelle für alles, was in der Welt des Gamings pulsiert! <br/> Wir sind deine Crew für topaktuelle News, knallharte Reviews und exklusive Einblicke in die heißesten Titel. Egal ob PC, Konsole oder Mobile, hier findest du alles, was dein Gamer-Herz begehrt. Schnall dich an, es wird eine wilde Fahrt!
+        </article>
+
+        <section class="content-section">
+            <h2 class="Erwartung">Was euch alles erwartet</h2>
+
+            <div class="features-container">
+                <div class="feature-card card">
+                    <i class="fa-solid fa-newspaper icon"></i>
+                    <h3>Top-Aktuelle News</h3>
+                    <p>Verpasse keine Ankündigung mehr! Wir bringen dir die heißesten News aus der Gaming-Welt direkt auf den Schirm.</p>
+                </div>
+
+                <div class="feature-card card">
+                    <i class="fa-solid fa-star-half-stroke icon"></i>
+                    <h3>Ehrliche Reviews</h3>
+                    <p>Wir testen die neuesten Titel auf Herz und Nieren und geben dir eine klare Kaufempfehlung – ohne Kompromisse.</p>
+                </div>
+
+                <div class="feature-card card">
+                    <i class="fa-solid fa-book-open icon"></i>
+                    <h3>Hilfreiche Guides</h3>
+                    <p>Stuck in a Level? Unsere Guides und Walkthroughs helfen dir durch die schwierigsten Passagen deiner Lieblingsspiele.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
