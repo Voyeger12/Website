@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), clipboard-write=(), encrypted-media=(), gyroscope=(), picture-in-picture=()">
+    <title>Spannende Reviews! - Metrorealms</title>
+    
+    <!-- Diese Links sind wichtig und müssen auf JEDER Seite sein -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="Metrorealms-Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Der Header ist eine exakte Kopie von deiner index.html -->
+    <header class="header-container">
+        <a href="index.html" class="logo-link">
+            <div class="logo-title-group">
+                <img class="Logo" src="Metrorealms-Logo.png" alt="Metrorealms Logo">
+                <h1 class="Haupttitel">Metrorealms</h1> 
+            </div>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="guides.html">Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+            <h1>Alle Rewievs auf einem Blick</h1>
+        </section>
+
+        <div class="filter-sort-bar">
+            <div class="filter-group">
+                <label for="category-filter">Kategorie:</label>
+                <select id="category-filter" name="category">
+                    <option value="all">Alle</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="indie">Indie</option>
+                    <option value="esports">E-Sports</option>
+                    <option value="retro">Retro</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="event">Events</option>
+                    <!-- Für reviews.html zusätzlich: -->
+                    <option value="review">Reviews</option>
+                    <!-- Für guides.html zusätzlich: -->
+                    <option value="guide">Guides</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Sortieren nach:</label>
+                <select id="sort-by" name="sort">
+                    <option value="date-desc">Neueste zuerst</option>
+                    <option value="date-asc">Älteste zuerst</option>
+                    <option value="title-asc">Titel A-Z</option>
+                    <option value="title-desc">Titel Z-A</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="content-section">
+            
+            <div class="item-grid">
+                <a href="article.html" class="item-card">
+                    <img src="https://gaming-cdn.com/images/news/articles/3024/cover/1000x563/cyberpunk-2077-la-2-0-und-phantom-liberty-waren-die-letzten-grossen-updates-cover65157291f24f3.jpg" alt="Futuristischer Charakter in einem Videospiel">
+                    <div class="item-card-content">
+                        <h4>Cyberpunk 2077: Phantom Liberty bricht Rekorde</h4>
+                        <p>Das neue Add-On für das Sci-Fi-Rollenspiel begeistert Kritiker und Spieler gleichermaßen.</p>
+                        <span class="tag">NEWS</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://www.pcwelt.de/wp-content/uploads/2025/01/4354554_original-1.jpg?quality=50&strip=all&w=1024" alt="Nahaufnahme einer Gaming-Maus">
+                    <div class="item-card-content">
+                        <h4>Die besten Gaming-Mäuse 2025 im Test</h4>
+                        <p>Welche Maus gibt dir den entscheidenden Vorteil? Unser großer Hardware-Vergleich zeigt die Sieger.</p>
+                        <span class="tag">HARDWARE</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://img.itch.zone/aW1hZ2UvMTc5NDMwMi8xMDU0MzAyNS5wbmc=/original/zKWo0C.png" alt="Eine Person spielt ein Indie-Spiel auf einem Laptop">
+                    <div class="item-card-content">
+                        <h4>Indie-Geheimtipp: "Echoes of the Void"</h4>
+                        <p>Ein kleines Studio aus Schweden liefert eines der kreativsten Puzzle-Spiele des Jahres.</p>
+                        <span class="tag">INDIE</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_eVCT7_qK3_m1OCm7bOcJbfdyLaSDw015JA&s" alt="Ein E-Sports Team jubelt auf einer Bühne">
+                    <div class="item-card-content">
+                        <h4>E-Sports: Team Liquid gewinnt die Weltmeisterschaft</h4>
+                        <p>In einem packenden Finale sichert sich das Team den Titel und ein Rekord-Preisgeld.</p>
+                        <span class="tag">E-SPORTS</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://images.pexels.com/photos/3945657/pexels-photo-3945657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="VR-Headset liegt auf einem Tisch">
+                    <div class="item-card-content">
+                        <h4>Die Zukunft von VR: Was kommt nach der Quest 3?</h4>
+                        <p>Neue Technologien versprechen noch immersivere Erlebnisse. Wir werfen einen Blick in die Zukunft.</p>
+                        <span class="tag">TECHNIK</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ein Cosplayer in aufwändigem Kostüm">
+                    <div class="item-card-content">
+                        <h4>Gamescom 2025: Die besten Cosplays</h4>
+                        <p>Wir waren vor Ort und haben die beeindruckendsten und kreativsten Kostüme für euch festgehalten.</p>
+                        <span class="tag">EVENT</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ein alter Arcade-Automat">
+                    <div class="item-card-content">
+                        <h4>Retro-Ecke: Die Magie der Arcade-Hallen</h4>
+                        <p>Ein nostalgischer Rückblick auf eine Zeit, in der Highscores noch mit drei Buchstaben verewigt wurden.</p>
+                        <span class="tag">RETRO</span>
+                    </div>
+                </a>
+                <a href="article.html" class="item-card">
+                    <img src="https://images.pexels.com/photos/4219654/pexels-photo-4219654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ein Smartphone mit einem Mobile Game">
+                    <div class="item-card-content">
+                        <h4>Mobile Gaming: Mehr als nur Zeitvertreib?</h4>
+                        <p>Wir untersuchen den Trend und zeigen, welche Mobile Games es mit Konsolentiteln aufnehmen können.</p>
+                        <span class="tag">MOBILE</span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="pagination">
+                <span class="current">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">12</a>
+                <a href="#">&raquo;</a>
+            </nav>
+
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Rechtliches</h4>
+              <ul>
+                <li><a href="Impressum.html">Impressum</a></li>
+                <li><a href="Datenschutz.html">Datenschutz</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Folge uns</h4>
+              <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Metrorealms" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Metrorealms. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner">
+  <p>
+    Wir verwenden Cookies und binden externe Dienste wie YouTube ein, um dir das bestmögliche Erlebnis zu bieten.
+    <a href="Datenschutz.html">Mehr dazu in unserer Datenschutzerklärung.</a>
+  </p>
+  <button id="cookieAcceptBtn" class="cookie-accept-btn">Verstanden & Akzeptieren</button>
+</div>
+
+<script src="script.js" defer></script>
+<script src="news-filter.js" defer></script>
+
+</body>
+</html>

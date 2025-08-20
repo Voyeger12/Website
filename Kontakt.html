@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gaming, Reviews, Guides, Technik">
+    <meta name="description" content="Gaming website für Reviews Guides und News für die Informationen von Gamern">
+    <meta name="author" content="Metrorealms">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), autoplay=(), clipboard-write=(), encrypted-media=(), gyroscope=(), picture-in-picture=()">
+    <title>Kontaktmöglichkeit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Metrorealms-Logo.png" type="image/png">
+    
+</head>
+
+<body>
+
+    <header class="header-container">
+        <a href="index.html" class="logo-link">
+        <div class="logo-title-group">
+            <img class="Logo" src="Metrorealms-Logo.png" alt="Metrorealms Logo">
+            <h1 class="Haupttitel">Metrorealms</h1> 
+        </div>
+        </a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+       <header class="page-header">
+    <h1>Kontakt</h1>
+</header>
+
+<div class="article-container">
+    <div class="contact-form-container card">
+
+        <h2>Schreib uns eine Nachricht!</h2>
+        <p>Wir freuen uns auf dein Feedback, Fragen oder Kooperationsanfragen.</p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Dein Name</label>
+                <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Deine E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" placeholder="max.mustermann@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Betreff</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Bitte auswählen...</option>
+                    <option value="feedback">Feedback zur Seite</option>
+                    <option value="question">Frage zu einem Artikel</option>
+                    <option value="cooperation">Kooperationsanfrage</option>
+                    <option value="other">Sonstiges</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Deine Nachricht</label>
+                <textarea id="message" name="message" rows="6" placeholder="Was liegt dir auf dem Herzen?" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Nachricht Senden</button>
+        </form>
+
+        <div id="success-message" style="display: none;">
+            <h3>Vielen Dank! <i class="fa-solid fa-paper-plane"></i></h3>
+            <p>Deine Nachricht wurde "erfolgreich versendet". Wir melden uns bald bei dir (nicht wirklich, dies ist eine Demo 😉).</p>
+        </div>
+
+    </div>
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="guides.html">Guides</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Rechtliches</h4>
+              <ul>
+                <li><a href="Impressum.html">Impressum</a></li>
+                <li><a href="Datenschutz.html">Datenschutz</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Folge uns</h4>
+              <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Metrorealms" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Metrorealms. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner">
+  <p>
+    Wir verwenden Cookies und binden externe Dienste wie YouTube ein, um dir das bestmögliche Erlebnis zu bieten.
+    <a href="Datenschutz.html">Mehr dazu in unserer Datenschutzerklärung.</a>
+  </p>
+  <button id="cookieAcceptBtn" class="cookie-accept-btn">Verstanden & Akzeptieren</button>
+</div>
+
+<script src="script.js" defer></script>
+<script src="contact.js" defer></script>
+
+</body>
+</html>
