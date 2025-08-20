@@ -660,3 +660,18 @@
             border-radius: 8px;
             background-color: rgba(255, 71, 87, 0.1);
         }
+
+                /* --- AKTIVER NAV-LINK --- */
+
+        /* Hebt den Text hervor und färbt ihn mit dem Akzent.
+        Die Regel prüft die ID des body-Tags und stylt dann den passenden Link in der Navi. */
+
+        #index-page .main-nav a[href="index.html"],
+        #news-page .main-nav a[href="news.html"],
+        #reviews-page .main-nav a[href="reviews.html"],
+        #guides-page .main-nav a[href="guides.html"],
+        #kontakt-page .main-nav a[href="Kontakt.html"] {
+            color: var(--accent-color);
+            box-shadow: 0 2px 0 var(--accent-color); /* Eine feine Linie darunter */
+            transform: scale(1.1);
+}
