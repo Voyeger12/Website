@@ -258,8 +258,8 @@
         
 
         .logo-link {
-        text-decoration: none; /* Entfernt die hässliche Unterstreichung */
-        color: inherit;        /* Sorgt dafür, dass der Text die Farbe vom Elternelement erbt */
+            text-decoration: none; /* Entfernt die hässliche Unterstreichung */
+            color: inherit;        /* Sorgt dafür, dass der Text die Farbe vom Elternelement erbt */
         }
 
                 /* --- SEITEN-SPEZIFISCHE STYLES --- */
@@ -674,4 +674,20 @@
             color: var(--accent-color);
             box-shadow: 0 2px 0 var(--accent-color); /* Eine feine Linie darunter */
             transform: scale(1.1);
-}
+        }
+
+        /* In deiner style.css, im Footer-Abschnitt */
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: #aaa; /* Grundfarbe für die Icons setzen */
+            transition: color 0.2s ease, transform 0.2s ease; /* DIESE ZEILE HINZUFÜGEN */
+        }
+
+        /* Und jetzt der Hover-Effekt */
+            .social-links a:hover {
+            color: var(--accent-color); /* Farbe ändern */
+            transform: translateY(-3px); /* Leicht nach oben schweben lassen */
+        }

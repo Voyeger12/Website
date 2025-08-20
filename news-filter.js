@@ -9,7 +9,7 @@
 class NewsFilterSystem {
     constructor() {
         // Konfiguration
-        this.articlesPerPage = 4    ;
+        this.articlesPerPage = 8    ;
         this.currentPage = 1;
         
         // Prüfen ob die nötigen Elemente vorhanden sind
